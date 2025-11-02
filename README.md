@@ -85,3 +85,11 @@ Anggota {
     ],
 }
 ```
+## 🔮 Pengembangan Selanjutnya
+
+Proyek ini dapat dengan mudah diperluas dengan fitur-fitur berikut:
+
+* **Fungsi** `kembalikan_buku` Membuat fungsi yang menghapus buku dari `Vec` pinjaman `Anggota` dan mengubah `status` buku kembali menjadi `Tersedia`.
+* **Penanganan Error dengan** `Result`: Mengubah `fn pinjam_buku` agar mengembalikan `Result<(), String>` (sukses atau pesan error) alih-alih mencetak ke konsol.
+* **Penyimpanan Persisten:** Menggunakan *crate* `serde_json` untuk menyimpan dan membaca status `katalog` dari sebuah file katalog.json.
+* **Input Pengguna (CLI):** Menggunakan *crate* `clap` untuk membuat antarmuka baris perintah (CLI) yang interaktif.
